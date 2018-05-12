@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic');
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Sans Narrow", "Georgia", sans-serif;
+  min-width: 320px;
+}
+
+@media (min-width: 680px) {
+  body {
+    min-width: 680px;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    min-width: 1000px;
+  }
+}
