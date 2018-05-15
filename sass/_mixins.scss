@@ -4,3 +4,20 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin main-font($size, $line-h, $f-weight, $transform, $color) {
+  font-size: $size;
+  line-height: $line-h;
+  font-weight: $f-weight;
+  text-transform: $transform;
+  color: $color;
+}
