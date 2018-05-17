@@ -3,7 +3,7 @@
   top: 50px;
   left: 50%;
   
-  display: block;
+  display: none;
   width: 320px;
   padding: 35px 20px;
   margin-left: -160px;
@@ -116,6 +116,10 @@
   }
 }
 
+.user-modal__login-button-big {
+  display: none;
+}
+
 .user-modal__login-button,
 .user-modal__close {
   width: 130px;
@@ -163,6 +167,7 @@
   }
   
   .user-modal__login-button-big {
+    display: block;
     width: 320px;
   }
   

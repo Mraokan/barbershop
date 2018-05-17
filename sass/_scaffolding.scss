@@ -14,6 +14,8 @@ body {
 body {
   font-family: "PT Sans Narrow", "Georgia", sans-serif;
   min-width: 320px;
+  
+  background-color: #242424;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -38,6 +40,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: 680px) {
   body {
     min-width: 680px;
+    background-color: #353535;
   }
 }
 

@@ -16,7 +16,9 @@
     
     <nav class="main-nav">
       <p class="main-nav__mobile-title">Главная</p>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list main-menu">
           <li class="main-menu__item main-menu__item--current">
@@ -67,7 +69,7 @@
     <section class="statistics">
       <header class="statistics__header">
         <h2 class="visually-hidden">Статистика барбершопа</h2>
-        <b class="statistics__slogan">Стрижка у нас это выгодно!</b>
+        <p class="statistics__slogan">Стрижка у нас это&nbsp;выгодно!</p>
         <p class="statistics__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
         <small class="statistics__legend statistics__legend--top">
           <sup>*</sup> — приведённые данные ложь
@@ -75,40 +77,40 @@
       </header>
       
       <table class="statistics__table">
-        <tr>
+        <tr class="statistics__row">
           <td class="statistics__value">
-            1&nbsp;500 <sup>*</sup>
+            1&nbsp;500<sup>*</sup>
           </td>
           <td class="statistics__field">
-            рублей<br>вложений
+            рублей <br>вложений
           </td>
         </tr>
-        <tr>
+        <tr class="statistics__row">
           <td class="statistics__value">
             7&nbsp;200
           </td>
           <td class="statistics__field">
-            секунд<br>времени мастера
+            секунд <br>времени мастера
           </td>
         </tr>
-        <tr>
+        <tr class="statistics__row">
           <td class="statistics__value">
             90&nbsp;000
           </td>
           <td class="statistics__field">
-            постриженных<br>волос
+            постриженных <br>волос
           </td>
         </tr>
-        <tr>
+        <tr class="statistics__row">
           <td class="statistics__value">
-            500&nbsp;000 <sup>*</sup>
+            500&nbsp;000<sup>*</sup>
           </td>
           <td class="statistics__field">
-            лайков и<br>комплиментов
+            лайков и <br>комплиментов
           </td>
         </tr>
       </table>
-      <small class="statistics__legend statistics__legend--top">
+      <small class="statistics__legend statistics__legend--bottom">
         <sup>*</sup> — приведённые данные ложь
       </small>
     </section>

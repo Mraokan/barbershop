@@ -11,7 +11,8 @@ body {
 
 body {
   font-family: "PT Sans Narrow", "Georgia", sans-serif;
-  min-width: 320px; }
+  min-width: 320px;
+  background-color: #242424; }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -30,7 +31,8 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 680px) {
   body {
-    min-width: 680px; } }
+    min-width: 680px;
+    background-color: #353535; } }
 
 @media (min-width: 1000px) {
   body {
@@ -112,6 +114,7 @@ input[type="radio"].visually-hidden {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse; }
   .page-header__logo {
+    z-index: -1;
     height: 400px;
     padding-top: 40px;
     background-image: url(../../img/bg-tablet.jpg);
@@ -155,7 +158,6 @@ input[type="radio"].visually-hidden {
   right: 0;
   width: 70px;
   height: 50px;
-  font-size: 0;
   background-color: #6a4d38;
   border: none; }
   .main-nav__toggle:active {
@@ -196,6 +198,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     top: -50px;
     left: 0;
+    display: block;
     margin-bottom: -50px; }
 
 @media (min-width: 680px) {
@@ -263,6 +266,8 @@ input[type="radio"].visually-hidden {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -417,7 +422,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 50px;
   left: 50%;
-  display: block;
+  display: none;
   width: 320px;
   padding: 35px 20px;
   margin-left: -160px;
@@ -522,6 +527,9 @@ input[type="radio"].visually-hidden {
   .user-modal__restore:active {
     color: #6a4d38; }
 
+.user-modal__login-button-big {
+  display: none; }
+
 .user-modal__login-button,
 .user-modal__close {
   width: 130px; }
@@ -560,6 +568,7 @@ input[type="radio"].visually-hidden {
   .user-modal__login-button {
     display: none; }
   .user-modal__login-button-big {
+    display: block;
     width: 320px; }
   .user-modal__close {
     position: absolute;
@@ -582,3 +591,179 @@ input[type="radio"].visually-hidden {
     .user-modal__close::after {
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg); } }
+
+.statistics {
+  position: relative; }
+
+.statistics__header {
+  width: 100%;
+  padding: 20px 38px;
+  background-color: #ffffff; }
+
+.statistics__slogan {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  width: 100%;
+  margin: 0;
+  text-align: center; }
+
+.statistics__intro {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  text-transform: none;
+  color: #000000;
+  width: 100%;
+  margin: 0;
+  margin-top: 15px;
+  text-align: center; }
+
+.statistics__table {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  border-collapse: collapse; }
+
+.statistics__row {
+  height: 78px; }
+  .statistics__row:nth-of-type(1) {
+    background-color: #404040; }
+  .statistics__row:nth-of-type(2) {
+    background-color: #4e4e4e; }
+  .statistics__row:nth-of-type(3) {
+    background-color: #353535; }
+  .statistics__row:nth-of-type(4) {
+    background-color: #404040; }
+
+.statistics__value {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: none;
+  color: #ffffff;
+  width: 50%;
+  padding-left: 20px; }
+  .statistics__value sup {
+    vertical-align: top;
+    font-size: 90%; }
+
+.statistics__field {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: none;
+  color: #f7f4f1;
+  width: 50%;
+  padding-right: 20px;
+  text-align: right; }
+
+.statistics__legend {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.3); }
+  .statistics__legend sup {
+    vertical-align: top;
+    font-size: 90%; }
+  .statistics__legend--top {
+    display: none; }
+  .statistics__legend--bottom {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -110px; }
+
+@media (min-width: 680px) {
+  .statistics__header {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 640px;
+    height: 184px;
+    margin: 0 auto;
+    margin-top: -184px;
+    padding: 30px 40px; }
+    .statistics__header::before {
+      content: "";
+      position: absolute;
+      top: 43px;
+      left: -22px;
+      width: 0;
+      height: 0;
+      border: 11px solid #ffffff;
+      border-bottom-color: transparent;
+      border-left-color: transparent; }
+  .statistics__slogan {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: none;
+    color: #000000;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 220px;
+    text-align: left; }
+  .statistics__intro {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 210px;
+    margin-top: 5px;
+    margin-right: 40px;
+    margin-left: auto;
+    text-align: left; }
+  .statistics__table {
+    min-width: 640px; }
+  .statistics__table tbody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .statistics__row {
+    width: 320px;
+    height: 159px;
+    padding: 25px 35px; }
+    .statistics__row td {
+      display: block;
+      width: auto;
+      padding: 0; }
+  .statistics__value {
+    margin-bottom: 10px;
+    font-size: 72px;
+    line-height: 72px; }
+  .statistics__field {
+    font-size: 20px;
+    line-height: 27px;
+    text-align: left; }
+    .statistics__field br {
+      display: none; }
+  .statistics__legend--top {
+    display: block;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.3); }
+  .statistics__legend--bottom {
+    display: none; } }
+
+@media (min-width: 1000px) {
+  .statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: -159px; }
+  .statistics__header {
+    width: 320px;
+    height: 318px;
+    margin: 0; }
+  .statistics__intro {
+    margin-top: 30px; }
+  .statistics__legend--top {
+    margin-top: 30px; } }

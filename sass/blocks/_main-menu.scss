@@ -44,6 +44,7 @@
 @media (min-width: 680px) {
   .main-menu {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 560px;
     margin-right: 15px;

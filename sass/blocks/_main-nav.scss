@@ -29,8 +29,6 @@
   width: 70px;
   height: 50px;
   
-  font-size: 0;
-  
   background-color: #6a4d38;
   border: none;
   
@@ -91,6 +89,8 @@
     position: relative;
     top: -50px;
     left: 0;
+    
+    display: block;
     
     margin-bottom: -50px;
   }
