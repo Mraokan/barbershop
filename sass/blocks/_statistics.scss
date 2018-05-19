@@ -90,11 +90,11 @@
   }
   
   &--bottom {
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    
-    margin-left: -110px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    text-align: center;
   }
 }
 

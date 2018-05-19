@@ -41,7 +41,7 @@
     width: 16px;
     height: 16px;
     
-    background-image: url(../../img/login.svg);
+    background-image: url(../img/login.svg);
     
     opacity: 0.3;
   }
@@ -90,7 +90,7 @@
     
     &:hover::before,
     &:focus::before {
-      background-image: url(../../img/login-focus.svg);
+      background-image: url(../img/login-focus.svg);
     }
   }
 }

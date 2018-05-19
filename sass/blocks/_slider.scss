@@ -1,0 +1,41 @@
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
+  width: 76px;
+  height: 10px;
+  margin: 0 auto;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.slider__toggle {
+  @include button-reset;
+
+  width: 8px;
+  height: 8px;
+
+  font-size: 0;
+
+  border: 1px solid #989898;
+  background-color: transparent;
+
+  transform: rotate(45deg);
+  
+  &--active {
+    background-color: #ffffff;
+  }
+
+  &--dark {
+    border-color: #858483;
+  }
+  
+  &--dark--active {
+    background-color: #353535;
+  }
+}
+
+@media (min-width: 680px) {
+  .slider__toggles {
+    display: none;
+  }
+}

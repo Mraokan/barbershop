@@ -1,0 +1,160 @@
+.advantages {
+  background-image: url(../img/angle-mask-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.advantages__wrapper {
+  margin: 0 20px;
+  padding-bottom: 50px;
+}
+
+.advantages__list {
+  @include no-list;
+}
+
+.advantages__item {
+  display: none;
+  width: 100%;
+  padding-top: 140px;
+  
+  background-image: url("../img/advantage-1.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 25px;
+  
+  &--cool {
+    background-image: url(../img/advantage-2.svg);
+  }
+  
+  &--expensive {
+    background-image: url(../img/advantage-3.svg);
+  }
+}
+
+.advantages__title {
+  @include main-font (30px, 30px, 700, uppercase, #ffffff);
+
+  margin: 0;
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+.advantages__description {
+  @include main-font (20px, 27px, 400, none, #f7f4f1);
+
+  margin-top: 10px;
+  margin-bottom: 27px;
+
+  text-align: center;
+}
+
+@media (min-width: 680px) {
+  .advantages {
+    background-image: url(../img/angle-mask.svg);
+    background-repeat: no-repeat;
+    background-size: 1280px 68px;
+  }
+
+  .advantages__wrapper {
+    width: 640px;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 45px;
+    padding-bottom: 90px;
+  }
+
+  .advantages__item {
+    position: relative;
+
+    display: block;
+    padding-top: 0;
+    padding-left: 130px;
+
+    background-position: 0 0;
+
+    &--fast,
+    &--cool {
+      padding-bottom: 85px;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        bottom: 43px;
+        right: 0;
+
+        width: 568px;
+        height: 1px;
+
+        background-color: #4a4a4a;
+      }
+    }
+  }
+
+  .advantages__title {
+    margin: 0;
+
+    text-align: left;
+  }
+
+  .advantages__description {
+    margin-bottom: 0;
+
+    text-align: left;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .advantages__wrapper {
+    width: 960px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .advantages__list {
+    display: flex;
+  }
+
+  .advantages__item {
+    width: 320px;
+    padding-top: 125px;
+    padding-left: 0;
+
+    background-position: 50% 0;
+
+    &--fast,
+    &--cool {
+      padding-bottom: 0;
+
+      &::after {
+        bottom: 5px;
+
+        width: 1px;
+        height: 268px;
+      }
+    }
+  }
+
+  .advantages__title {
+    margin-bottom: 15px;
+
+    text-align: center;
+  }
+
+  .advantages__description {
+    text-align: center;
+
+    & br {
+      display: inline;
+    }
+  }
+}
