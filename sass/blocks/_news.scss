@@ -1,0 +1,179 @@
+.news {
+   position: relative;
+
+   background-color: #f8f5f2;
+
+   &::after {
+     content: "";
+
+     position: absolute;
+     bottom: 1px;
+     left: 0;
+     right: 0;
+
+     height: 1px;
+
+     background-color: #e5ddd5;
+   }
+ }
+
+.news__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.news__title {
+   @include main-font(30px, 30px, 700, uppercase, #000000);
+
+   margin: 0;
+   margin-bottom: 10px;
+   padding-top: 35px;
+
+   text-align: center;
+ }
+
+.news__list {
+  @include no-list;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.news__item {
+  position: relative;
+
+  padding-left: 68px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  &:first-of-type::after {
+    content: "";
+
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+
+    height: 1px;
+
+    background-color: #e5ddd5;
+  }
+
+  &:last-of-type {
+    display: none;
+  }
+}
+
+.news__date {
+  @include main-font(16px, 16px, 400, none, #ffffff);
+
+  position: absolute;
+  top: 25px;
+  left: 0;
+
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  text-align: center;
+
+  background-color: #000000;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    border: 25px solid transparent;
+    border-top-width: 10px;
+    border-top-color: #000000;
+  }
+}
+
+.news__day {
+  @include main-font(30px, 30px, 700, none, #fffffff);
+}
+
+.news__text {
+  @include main-font(18px, 27px, 400, none, #000000);
+
+  margin: 0;
+}
+
+.news__to-all {
+  width: 280px;
+}
+
+@media (min-width: 680px) {
+  .news__wrapper {
+    position: relative;
+
+    width: 640px;
+    padding-bottom: 35px;
+  }
+
+  .news__title {
+    margin: 0;
+    margin-bottom: 60px;
+    padding-top: 50px;
+
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .news__list {
+    flex-direction: row;
+  }
+
+  .news__item {
+    width: 320px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 40px;
+
+    &:first-of-type::after {
+      height: 0;
+    }
+
+    &:nth-of-type(2) span {
+      display: none;
+    }
+  }
+
+  .news__date {
+    top: 10px;
+  }
+
+  .news__to-all {
+    position: absolute;
+    top: 40px;
+    right: 0;
+
+    width: 160px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .news__title {
+    padding-top: 60px;
+  }
+
+  .news__wrapper {
+    width: 960px;
+    padding-bottom: 40px;
+  }
+
+  .news__item:last-of-type {
+    display: block;
+  }
+
+  .news__to-all {
+    top: 50px;
+  }
+}
