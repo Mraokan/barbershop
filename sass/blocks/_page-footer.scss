@@ -1,0 +1,32 @@
+.page-footer {
+  padding-bottom: 25px;
+
+  background-color: #292929;
+  border-top: 1px solid #3e3e3e;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 680px) {
+  .page-footer {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 640px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .page-footer__wrapper {
+    width: 960px;
+  }
+}

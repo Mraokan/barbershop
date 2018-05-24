@@ -1,0 +1,26 @@
+.copyright__text {
+  @include main-font(18px, 27px, 400, none, #ffffff);
+
+  margin-top: 25px;
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+.copyright__link {
+  width: 280px;
+}
+
+@media (min-width: 680px) {
+  .copyright {
+    margin-left: auto;
+  }
+
+  .copyright__text {
+    margin-top: 0;
+  }
+
+  .copyright__link {
+    width: 160px;
+  }
+}
