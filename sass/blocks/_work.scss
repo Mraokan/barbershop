@@ -1,0 +1,74 @@
+.work {
+  background-color: #f8f5f2;
+}
+
+.work__title {
+  @include main-font(30px, 30px, 700, uppercase, #000000);
+
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+}
+
+.work__link {
+  display: none;
+}
+
+@media (min-width: 680px) {
+  .work {
+    position: relative;
+
+    margin-top: -30px;
+  }
+
+  .work__wrapper {
+    position: relative;
+
+    width: 680px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .work__mask {
+    position: absolute;
+    top: -68px;
+
+    width: 100%;
+    height: 68px;
+
+    background-image: url(../../img/angle-mask.svg);
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .work__title {
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .work__link {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .work {
+    margin-top: -340px;
+    padding-bottom: 45px;
+  }
+
+  .work__wrapper {
+    width: 960px;
+  }
+}

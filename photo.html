@@ -65,45 +65,58 @@
   
   <main class="photo-main">
     <section class="work">
-      <h2 class="work__title">Наши работы</h2>
-      <a class="work__link button">На главную</a>
-      <ul class="work__list work-list">
-        <li class="work-list__item">
-          <img class="work-list__photo" src="img/#" width="280" height="480" alt="Фото Лжепётра Мчиславского">
-          <p class="work-list__client">Лжепётр Мчиславский</p>
-          <p class="work-list__review">Где я только ни стригся, но так как<br>делаете это вы — не умеет никто другой!<br>Еще раз спасибо и до скорого!</p>
-          <ul class="work-list__services">
-            <li class="work-list__service work-list__service--haircut">Стрижка</li>
-            <li class="work-list__service work-list__service--beard">Бритье</li>
-            <li class="work-list__service work-list__service--mustache">Усы</li>
-          </ul>
-        </li>
-        <li class="work-list__item">
-          <img class="work-list__photo" src="img/#" width="280" height="480" alt="Фото Саши Мальцева">
-          <p class="work-list__client">Саша Мальцев</p>
-          <p class="work-list__review">Попросил омолодить и омолодили!<br>Кто теперь скажет, что мне 45?</p>
-          <ul class="work-list__services">
-            <li class="work-list__service work-list__service--haircut">Стрижка</li>
-          </ul>
-        </li>
-        <li class="work-list__item">
-          <img class="work-list__photo" src="img/#" width="280" height="480" alt="Фото Владимирa Иванычa">
-          <p class="work-list__client">Владимир Иваныч</p>
-          <p class="work-list__review">К зимнему сезону — готов!</p>
-          <ul class="work-list__services">
-            <li class="work-list__service work-list__service--beard">Борода</li>
-            <li class="work-list__service work-list__service--mustache">Усы</li>
-          </ul>
-        </li>
-        <li class="work-list__item">
-          <img class="work-list__photo" src="img/#" width="280" height="480" alt="Фото Винстона Синего">
-          <p class="work-list__client">Винстон Синий</p>
-          <p class="work-list__review">Как только заростаю и волосы<br>начинают мешать видеть — бегом<br>в Бородинский!</p>
-          <ul class="work-list__services">
-            <li class="work-list__service work-list__service--haircut">Стрижка</li>
-          </ul>
-        </li>
-      </ul>
+      <div class="work__mask"></div>
+      <div class="work__wrapper">
+        <h2 class="work__title">Наши работы</h2>
+        <a class="work__link button" href="index.html">На главную</a>
+        <ul class="work__list work-list">
+          <li class="work-list__item work-list__item--1">
+            <div class="work-list__photo-wrapper">
+              <img class="work-list__photo" src="img/photo-1.jpg" width="480" height="480" alt="Фото Лжепётра Мчиславского">
+            </div>
+            <p class="work-list__best-photo">Работа месяца</p>
+            <p class="work-list__client">Лжепётр Мчиславский</p>
+            <p class="work-list__review">Где я только ни стригся, но так как <br>делаете это вы — не умеет никто другой! <br>Еще раз спасибо и до скорого!</p>
+            <ul class="work-list__services">
+              <li class="work-list__service work-list__service--haircut">Стрижка</li>
+              <li class="work-list__service work-list__service--beard">Бритье</li>
+              <li class="work-list__service work-list__service--mustache">Усы</li>
+            </ul>
+          </li>
+          <li class="work-list__item work-list__item--2">
+            <div class="work-list__photo-wrapper">
+              <img class="work-list__photo" src="img/photo-2.jpg" width="294" height="294"
+                 alt="Фото Саши Мальцева">
+            </div>
+            <p class="work-list__client">Саша Мальцев</p>
+            <p class="work-list__review">Попросил омолодить и омолодили! <br>Кто теперь скажет, что мне 45?</p>
+            <ul class="work-list__services">
+              <li class="work-list__service work-list__service--haircut">Стрижка</li>
+            </ul>
+          </li>
+          <li class="work-list__item work-list__item--3">
+            <div class="work-list__photo-wrapper">
+              <img class="work-list__photo" src="img/photo-3.jpg" width="294" height="294" alt="Фото Владимирa Иванычa">
+            </div>
+            <p class="work-list__client">Владимир Иваныч</p>
+            <p class="work-list__review">К зимнему сезону — готов!</p>
+            <ul class="work-list__services">
+              <li class="work-list__service work-list__service--beard">Борода</li>
+              <li class="work-list__service work-list__service--mustache">Усы</li>
+            </ul>
+          </li>
+          <li class="work-list__item work-list__item--4">
+            <div class="work-list__photo-wrapper">
+              <img class="work-list__photo" src="img/photo-4.jpg" width="294" height="294" alt="Фото Винстона Синего">
+            </div>
+            <p class="work-list__client">Винстон Синий</p>
+            <p class="work-list__review">Как только заростаю и волосы <br>начинают мешать видеть — бегом <br>в Бородинский!</p>
+            <ul class="work-list__services">
+              <li class="work-list__service work-list__service--haircut">Стрижка</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </section>
     
     <section class="pricelist">
@@ -147,11 +160,11 @@
       </div>
     </section>
   </main>
-  
+
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__contacts contacts">
-        <b class="contacts__title">Барбершоп Бородинский</b>
+        <p class="contacts__title">Барбершоп Бородинский</p>
         <p class="contacts__text">
           г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
           <a class="contacts__phone" href="tel:+78125556666">
@@ -164,20 +177,26 @@
         <b class="social__title">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="#">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+            <a class="social__link social__link--instagram" href="#">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+            </a>
           </li>
         </ul>
       </div>
 
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="#">HTML Academy</a>
+        <p class="copyright__text">Разработано:</p>
+        <a class="button button--dark copyright__link" href="#">HTML Academy</a>
       </div>
     </div>
   </footer>
