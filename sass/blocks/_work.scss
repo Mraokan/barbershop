@@ -2,6 +2,10 @@
   background-color: #f8f5f2;
 }
 
+.work__wrapper {
+  padding-bottom: 48px;
+}
+
 .work__title {
   @include main-font(30px, 30px, 700, uppercase, #000000);
 
@@ -29,6 +33,7 @@
     width: 680px;
     margin: 0 auto;
     padding-top: 30px;
+    padding-bottom: 60px;
   }
 
   .work__mask {
@@ -65,10 +70,10 @@
 @media (min-width: 1000px) {
   .work {
     margin-top: -340px;
-    padding-bottom: 45px;
   }
 
   .work__wrapper {
     width: 960px;
+    padding-bottom: 45px;
   }
 }
