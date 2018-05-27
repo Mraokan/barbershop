@@ -291,6 +291,7 @@ a.button {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
   width: 70px;
   height: 50px;
   background-color: #6a4d38;
@@ -328,6 +329,7 @@ a.button {
   top: 0;
   right: 0;
   left: 70px;
+  z-index: 1;
   display: none; }
   .main-nav__wrapper--no-js {
     position: relative;
@@ -1300,7 +1302,7 @@ a.button {
   margin-top: 10px;
   margin-bottom: 27px; }
 
-.reviews__prew,
+.reviews__prev,
 .reviews__next {
   display: none; }
 
@@ -1343,14 +1345,14 @@ a.button {
     left: -20px;
     width: 124px;
     height: 80px; }
-  .reviews__prew,
+  .reviews__prev,
   .reviews__next {
     position: absolute;
     top: 0;
     display: block;
     width: 50px;
     height: 100%; }
-    .reviews__prew::after,
+    .reviews__prev::after,
     .reviews__next::after {
       content: "";
       position: absolute;
@@ -1364,7 +1366,7 @@ a.button {
       border-right-color: #000000;
       border-right-width: 12px;
       border-left-width: 12px; }
-  .reviews__prew {
+  .reviews__prev {
     left: 0; }
   .reviews__next {
     right: 0; }
