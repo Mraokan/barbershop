@@ -1,6 +1,8 @@
 @import "_scaffolding";
 @import "_mixins";
 @import "_variables";
+@import "_inputs";
+
 @import "blocks/_button";
 @import "blocks/_page-header";
 @import "blocks/_main-nav";
@@ -21,5 +23,9 @@
 @import "blocks/_pricelist";
 @import "blocks/_prices";
 @import "blocks/_discount";
+@import "blocks/_form-main";
+@import "blocks/_client-form";
+@import "blocks/_beard-model";
+@import "blocks/_add-services";
 
 @import "_display";

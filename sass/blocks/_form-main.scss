@@ -1,0 +1,103 @@
+.form-main {
+  position: relative;
+
+  padding-bottom: 75px;
+
+  background-color: #f8f5f2;
+  background-image: url(../../img/angle-mask-dark-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.form-main__link {
+  display: none;
+}
+
+.form-main__title {
+  @include main-font(30px, 30px, 700, uppercase, #000000);
+
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 30px;
+
+  text-align: center;
+}
+
+.form-main__wrapper {
+  position: relative;
+
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form-main__button {
+  width: 100%;
+}
+
+@media (min-width: 680px) {
+  .form-main {
+    top: -20px;
+
+    margin-bottom: -20px;
+    padding-bottom: 76px;
+
+    background-image: none;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -68px;
+
+      width: 100%;
+      height: 68px;
+
+      background-image: url(../img/angle-mask.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+  }
+
+  .form-main__title {
+    margin-bottom: 75px;
+    padding-top: 60px;
+
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .form-main__link {
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    display: block;
+  }
+
+  .form-main__wrapper {
+    width: 640px;
+  }
+
+  .form-main__button {
+    height: 70px;
+
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .form-main {
+    top: -330px;
+
+    margin-bottom: -330px;
+    padding-bottom: 87px;
+  }
+
+  .form-main__wrapper {
+    width: 960px;
+  }
+}

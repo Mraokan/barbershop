@@ -52,8 +52,10 @@
         <input class="user-modal__password" type="password" id="password" name="password" placeholder="Пароль">
         <div class="user-modal__help">
           <input class="user-modal__remember visually-hidden" type="checkbox" id="remember" name="remember">
-          <span class="user-modal__remember-indicator"></span>
-          <label class="user-modal__remember-label" for="remember">Запомните меня</label>
+          <label class="user-modal__remember-label" for="remember">
+            <span class="user-modal__remember-indicator"></span>
+            Запомните меня
+          </label>
           <a class="user-modal__restore" href="#">Я забыл пароль!</a>
         </div>
         <button class="button button--brown user-modal__login-button" type="submit">Войти</button>
@@ -62,47 +64,106 @@
       </form>
     </nav>
   </header>
-  
-  <form class="form-main" method="post" action="#">
-    <h1 class="form-main__title">Запись на стрижку</h1>
-    <fieldset class="form-main__client client-form">
-      <input class="client-form__name" type="text" name="name" placeholder="Имя">
-      <input class="client-form__surname" type="text" name="surname" placeholder="Фамилия">
-      <input class="client-form__patronymic" type="text" name="patronymic" placeholder="Отчество">
-      <input class="client-form__tel" type="tel" name="tel" placeholder="Контактный телефон">
-      <input class="client-form__email" type="email" name="email" placeholder="Контактный e-mail">
-      <textarea class="client-form__add-info" name="add-info" placeholder="Доп. информация для мастера"></textarea>
-    </fieldset>
-    <fieldset class="form-main__beard-model beard-model">
-      <legend class="beard-model__legend">Выберите модель бороды:</legend>
-      <input class="beard-model__radio" type="radio" name="admiral" id="admiral">
-      <label class="beard-model__admiral-label" for="admiral">адмирал</label>
-      <input class="beard-model__radio" type="radio" name="lumberer" id="lumberer">
-      <label class="beard-model__lumberer-label" for="lumberer">лесоруб</label>
-      <input class="beard-model__radio" type="radio" name="polarman" id="polarman">
-      <label class="beard-model__polarman-label" for="polarman">полярник</label>
-      <input class="beard-model__radio" type="radio" name="boyar" id="boyar">
-      <label class="beard-model__boyar-label" for="boyar">боярин</label>
-      <input class="beard-model__radio" type="radio" name="sage" id="sage">
-      <label class="beard-model__sage-label" for="sage">мудрец</label>
-    </fieldset>
-    <fieldset class="form-main__add-services add-services">
-      <legend class="add-services__legend">Дополнительные услуги:</legend>
-      <input class="add-services__checkbox" type="checkbox" name="paint-beard" id="paint-beard">
-      <label class="add-services__paint-beard-label" for="paint-beard">Подкрасить бороду</label>
-      <input class="add-services__checkbox" type="checkbox" name="wind-mustache" id="wind-mustache">
-      <label class="add-services__wind-mustache-label" for="wind-mustache">Накрутить усы</label>
-      <input class="add-services__checkbox" type="checkbox" name="comb-beard" id="comb-beard">
-      <label class="add-services__comb-beard-label" for="comb-beard">Причесать бороду</label>
-      <input class="add-services__checkbox" type="checkbox" name="cut-temple" id="cut-temple">
-      <label class="add-services__cut-temple-label" for="cut-temple">Подровнять виски</label>
-      <input class="add-services__checkbox" type="checkbox" name="remove-graying" id="remove-graying">
-      <label class="add-services__remove-graying-label" for="remove-graying">Убрать седину</label>
-      <input class="add-services__checkbox" type="checkbox" name="polish-bald" id="polish-bald">
-      <label class="add-services__polish-bald-label" for="polish-bald">Отполировать лысину</label>
-    </fieldset>
-    <button class="button form-main__button" type="submit">Отправить заявку</button>
-  </form>
+
+  <main class="form-main">
+    <form class="form-main__wrapper" method="post" action="#">
+      <h1 class="form-main__title">Запись на стрижку</h1>
+      <a class="form-main__link button" href="index.html">На главную</a>
+      <fieldset class="form-main__client client-form">
+        <input class="client-form__surname input-area" type="text" name="surname" placeholder="Фамилия">
+        <input class="client-form__name input-area" type="text" name="name" placeholder="Имя">
+        <input class="client-form__patronymic input-area" type="text" name="patronymic" placeholder="Отчество">
+        <input class="client-form__tel input-area" type="tel" name="tel" placeholder="Контактный телефон">
+        <input class="client-form__email input-area" type="email" name="email" placeholder="Контактный e-mail">
+        <textarea class="client-form__add-info input-area" name="add-info" placeholder="Доп. информация для мастера"></textarea>
+      </fieldset>
+      <fieldset class="form-main__beard-model beard-model">
+        <legend class="beard-model__legend">Выберите модель бороды:</legend>
+        <p class="beard-model__item">
+          <input class="beard-model__radio input__radio visually-hidden" type="radio"
+                 name="beard-model" id="admiral" checked>
+          <label class="beard-model__label beard-model__label--admiral" for="admiral">
+            <span class="input__radio-indicator"></span><br>
+            <span class="beard-model__label-text">адмирал</span>
+          </label>
+        </p>
+        <p class="beard-model__item">
+          <input class="beard-model__radio input__radio visually-hidden" type="radio" name="beard-model" id="lumberer">
+          <label class="beard-model__label beard-model__label--lumberer" for="lumberer">
+            <span class="input__radio-indicator"></span><br>
+            <span class="beard-model__label-text">лесоруб</span>
+          </label>
+        </p>
+        <p class="beard-model__item">
+          <input class="beard-model__radio input__radio visually-hidden" type="radio" name="beard-model" id="polarman">
+          <label class="beard-model__label beard-model__label--polarman" for="polarman">
+            <span class="input__radio-indicator"></span><br>
+            <span class="beard-model__label-text">полярник</span>
+          </label>
+        </p>
+        <p class="beard-model__item">
+          <input class="beard-model__radio input__radio visually-hidden" type="radio" name="beard-model" id="boyar">
+          <label class="beard-model__label beard-model__label--boyar" for="boyar">
+            <span class="input__radio-indicator"></span><br>
+            <span class="beard-model__label-text">боярин</span>
+          </label>
+        </p>
+        <p class="beard-model__item">
+          <input class="beard-model__radio input__radio visually-hidden" type="radio" name="beard-model" id="sage">
+          <label class="beard-model__label beard-model__label--sage" for="sage">
+            <span class="input__radio-indicator"></span><br>
+            <span class="beard-model__label-text">мудрец</span>
+          </label>
+        </p>
+      </fieldset>
+      <fieldset class="form-main__add-services add-services">
+        <legend class="add-services__legend">Дополнительные услуги:</legend>
+        <p class="add-services__item">
+          <input class="add-services__checkbox input__checkbox visually-hidden" type="checkbox" name="paint-beard" id="paint-beard" checked>
+          <label class="add-services__label add-services__label--paint-beard" for="paint-beard">
+            <span class="add-services__checkbox-indicator input__checkbox-indicator"></span>
+            <span class="add-services__label-text">Подкрасить бороду</span>
+          </label>
+        </p>
+        <p class="add-services__item">
+          <input class="add-services__checkbox input__checkbox visually-hidden" type="checkbox" name="wind-mustache" id="wind-mustache" checked>
+          <label class="add-services__label add-services__label--wind-mustache" for="wind-mustache">
+            <span class="add-services__checkbox-indicator input__checkbox-indicator"></span>
+            <span class="add-services__label-text">Накрутить усы</span>
+          </label>
+        </p>
+        <p class="add-services__item">
+          <input class="add-services__checkbox input__checkbox visually-hidden" type="checkbox" name="comb-beard" id="comb-beard">
+          <label class="add-services__label add-services__label--comb-beard" for="comb-beard">
+            <span class="add-services__checkbox-indicator input__checkbox-indicator"></span>
+            <span class="add-services__label-text">Причесать бороду</span>
+          </label>
+        </p>
+        <p class="add-services__item">
+          <input class="add-services__checkbox input__checkbox visually-hidden" type="checkbox" name="cut-temple" id="cut-temple">
+          <label class="add-services__label add-services__label--cut-temple" for="cut-temple">
+            <span class="add-services__checkbox-indicator input__checkbox-indicator"></span>
+            <span class="add-services__label-text">Подровнять виски</span>
+          </label>
+        </p>
+        <p class="add-services__item">
+          <input class="add-services__checkbox input__checkbox visually-hidden" type="checkbox" name="remove-graying" id="remove-graying">
+          <label class="add-services__label add-services__label--remove-graying" for="remove-graying">
+            <span class="add-services__checkbox-indicator input__checkbox-indicator"></span>
+            <span class="add-services__label-text">Убрать седину</span>
+          </label>
+        </p>
+        <p class="add-services__item">
+          <input class="add-services__checkbox input__checkbox visually-hidden" type="checkbox" name="polish-bald" id="polish-bald">
+          <label class="add-services__label add-services__label--polish-bald" for="polish-bald">
+            <span class="add-services__checkbox-indicator input__checkbox-indicator"></span>
+            <span class="add-services__label-text">Отполировать лысину</span>
+          </label>
+        </p>
+      </fieldset>
+      <button class="button button--brown form-main__button" type="submit">Отправить заявку</button>
+    </form>
+  </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">

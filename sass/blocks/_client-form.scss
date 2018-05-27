@@ -1,0 +1,64 @@
+.client-form {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.client-form__patronymic,
+.client-form__email {
+  margin-bottom: 32px;
+}
+
+.client-form__add-info {
+  height: 112px;
+}
+
+@media (min-width: 680px) {
+  .client-form {
+    padding-bottom: 55px;
+  }
+
+  .client-form__surname,
+  .client-form__name,
+  .client-form__patronymic {
+    width: 214px;
+    margin-right: -4px;
+  }
+
+  .client-form__tel,
+  .client-form__email {
+    width: 100%;
+  }
+
+  .client-form__add-info {
+    width: 100%;
+    height: 211px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .client-form {
+    padding-bottom: 35px;
+  }
+
+  .client-form__surname,
+  .client-form__name,
+  .client-form__patronymic {
+    width: 295px;
+    margin-right: 34px;
+  }
+
+  .client-form__patronymic {
+    margin-right: 0;
+  }
+
+  .client-form__tel,
+  .client-form__email {
+    width: 462px;
+  }
+
+  .client-form__tel {
+    margin-right: 32.5px;
+  }
+}

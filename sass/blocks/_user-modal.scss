@@ -2,6 +2,7 @@
   position: absolute;
   top: 50px;
   left: 50%;
+  z-index: 1;
   
   display: none;
   width: 320px;
@@ -82,15 +83,47 @@
   margin-bottom: 30px;
 }
 
+.user-modal__remember-label {
+  position: relative;
+}
+
 .user-modal__remember-indicator {
   position: absolute;
   top: 0;
+  left: 0;
   
   width: 33px;
   height: 33px;
   
   background-color: #ffffff;
   border: 1px solid #e5ddd5;
+}
+
+.user-modal__remember:focus + label .user-modal__remember-indicator,
+.user-modal__remember:focus + label .user-modal__remember-indicator {
+  border-color: #e3dad2;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.user-modal__remember:active + label .user-modal__remember-indicator {
+  background-color: #d5c9bd;
+}
+
+.user-modal__remember:checked + label .user-modal__remember-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 5px;
+
+  width: 22px;
+  height: 10px;
+
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+
+  transform: rotate(-45deg);
 }
 
 .user-modal__remember-label {

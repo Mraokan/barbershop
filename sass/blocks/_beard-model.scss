@@ -1,0 +1,123 @@
+.beard-model {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.beard-model__legend {
+  @include main-font(20px, 27px, 400, uppercase, #000000);
+
+  text-align: center;
+}
+
+.beard-model__item {
+  display: inline-block;
+  width: 90.67px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.beard-model__label {
+  display: block;
+  padding-left: 0;
+  height: 205px;
+
+  background-repeat: no-repeat;
+  background-position: 50% 100px;
+
+  &--admiral {
+    background-image: url(../img/beard-1.svg);
+  }
+  
+  &--lumberer {
+    background-image: url(../img/beard-2.svg);
+  }
+
+  &--polarman {
+    background-image: url(../img/beard-3.svg);
+  }
+
+  &--boyar {
+    background-image: url(../img/beard-4.svg);
+  }
+
+  &--sage {
+    background-image: url(../img/beard-5.svg);
+  }
+}
+
+.beard-model__label-text {
+  @include main-font(18px, 24px, 400, none, #000000);
+
+  display: inline-block;
+  width: 100%;
+  padding-top: 10px;
+
+  text-align: center;
+}
+
+@media (min-width: 680px) {
+  .beard-model__legend {
+    position: relative;
+
+    margin-bottom: 35px;
+
+    font-size: 30px;
+    line-height: 30px;
+
+    &::after,
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 15px;
+      left: -159px;
+
+      width: 135px;
+      height: 1px;
+
+      background-color: #e5ddd5;
+    }
+
+    &::after {
+      left: 346px;
+    }
+  }
+
+  .beard-model__item {
+    margin-right: 43px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .beard-model__legend {
+    margin-bottom: 40px;
+
+    &::after,
+    &::before {
+      left: -318px;
+
+      width: 280px;
+    }
+
+    &::after {
+      left: 362px;
+    }
+  }
+
+  .beard-model__item {
+    margin-right: 105px;
+
+    &:first-of-type {
+      margin-left: 35px;
+    }
+
+    &:last-of-type {
+      margin-right: 35px;
+    }
+  }
+}
